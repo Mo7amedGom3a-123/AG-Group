@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+@keyframes slidein
+{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideout
+{
+    from{
+        transform: translateX(+100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+body {
+  width: 100%;
+  background: url(logos/page.png);
+}
+
+.page {
+  padding: 120px 5% 60px;
+  background: linear-gradient(to right, #002f6c, #7b1e3d);
+  height: 100vh;
+}
+
+.page .label {
+  background-color: #7b1e3d;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.container .slogan
+{
+    margin:30px 0 50px 10px;
+    padding: 20px;
+    font-size: x-large;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #7b1e3d;
+    border-radius: 25px;
+    display: inline-block;
+    animation: slidein 1.5s ease-in-out forwards;
+}
+
+.container .who
+{
+    background-color: #7b1e3d;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 40px;
+    animation: slideout 1.5s ease-in-out forwards;
+}
+
+.container .why
+{
+    background-color: #7b1e3d;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 40px;
+    animation: slidein 1.5s ease-in-out forwards;
+}
+
+.container p
+{
+    margin: 20px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.container .who h2
+{
+    font-weight: 800;
+    margin: 10px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.container .why h2
+{
+    font-weight: 800;
+    margin: 10px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.container ul li
+{
+    margin: 20px 0 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
